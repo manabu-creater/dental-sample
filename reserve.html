@@ -1,0 +1,312 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大久保歯科クリニック</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reserve.css">
+    <link rel="stylesheet" href="queries.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header">
+      <div class="header">
+        <div class="header-left">
+          <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        </div>
+        <div class="header-right">
+          <!-- <div class="sns">
+            <a href="#"><i class="fab fa-facebook fa-4x"></i></a>
+            <a href="https://instagram.com/yamaki161?utm_medium=copy_link"><span class="insta"><i class="fab fa-instagram fa-4x"></i></span></a>
+          </div> -->
+          <p>Tel.03-1111-1111</p>
+          <p>診療時間：am 9:00 ~ pm 1:00</p>
+          <p>       ：pm 2:30 ~ pm 7:00</p>
+        </div>
+      </div>
+      <div class="navigation">
+        <ul class="nav">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="staff.html">医師紹介</a></li>
+          <li><a href="reserve.html">予約</a></li>
+        </ul>
+      </div>
+    </header>
+  
+    <article class="container">
+  
+      <section class="py-5">
+        <h3 class="text-center font-weight-bold mb-5" id="net-reservation">ネットからのご予約・お問い合わせ</h3>
+  
+        <ul>
+          <li>＊は必須項⽬です</li>
+          <li>ご予約は仮予約となります。こちらからの折り返しのご連絡をもってご予約確定となります</li>
+          <li>混雑している場合はご希望の予約時間が取れない場合があります</li>
+        </ul>
+  
+        <form class="border p-3 p-md-5 mb-5">
+  
+          <div class="mb-3 row align-items-center">
+            <label for="Subject" class="col-sm-2 col-form-label">ご用件＊</label>
+            <div class="col-sm-10">
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+                <label class="form-check-label" for="inlineRadio1">ご予約</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+                <label class="form-check-label" for="inlineRadio2">お問い合わせ</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="inlineRadioOptions" id="inlineRadio3" value="option3" required>
+                <label class="form-check-label" for="inlineRadio3">その他</label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label for="Name" class="col-sm-2 col-form-label">お名前＊</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="Named" placeholder="お名前を入力してください" required>
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label for="Email" class="col-sm-2 col-form-label">Eメール＊</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="Email" value="" required>
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label for="Tel" class="col-sm-2 col-form-label">電話番号＊</label>
+            <div class="col-sm-10">
+              <input type="tel" class="form-control" id="Tel" placeholder="ハイフンなしで入力してください" required>
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label for="inputEmail" class="col-lg-2 col-form-label">ご予約希望日時</label>
+            <div class="col-sm-10">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <select class="custom-select form-control-sm d-block w-100" id="date" required>
+                    <option value="希望日なし">希望月なし</option>
+                    <option value="1月">1月</option>
+                    <option value="2月">2月</option>
+                    <option value="3月">3月</option>
+                    <option value="4月">4月</option>
+                    <option value="5月">5月</option>
+                    <option value="6月">6月</option>
+                    <option value="7月">7月</option>
+                    <option value="8月">8月</option>
+                    <option value="9月">9月</option>
+                    <option value="10月">10月</option>
+                    <option value="11月">11月</option>
+                    <option value="12月">12月</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    月を選択してください
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <select class="custom-select form-control-sm d-block w-100" id="date" required>
+                    <option value="希望日なし">希望日なし</option>
+                    <option value="1日">1日</option>
+                    <option value="2日">2日</option>
+                    <option value="3日">3日</option>
+                    <option value="4日">4日</option>
+                    <option value="5日">5日</option>
+                    <option value="6日">6日</option>
+                    <option value="7日">7日</option>
+                    <option value="8日">8日</option>
+                    <option value="9日">9日</option>
+                    <option value="10日">10日</option>
+                    <option value="11日">11日</option>
+                    <option value="12日">12日</option>
+                    <option value="13日">13日</option>
+                    <option value="14日">14日</option>
+                    <option value="15日">15日</option>
+                    <option value="16日">16日</option>
+                    <option value="17日">17日</option>
+                    <option value="18日">18日</option>
+                    <option value="19日">19日</option>
+                    <option value="20日">20日</option>
+                    <option value="21日">21日</option>
+                    <option value="22日">22日</option>
+                    <option value="23日">23日</option>
+                    <option value="24日">24日</option>
+                    <option value="25日">25日</option>
+                    <option value="26日">26日</option>
+                    <option value="27日">27日</option>
+                    <option value="28日">28日</option>
+                    <option value="29日">29日</option>
+                    <option value="30日">30日</option>
+                    <option value="31日">31日</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    日にちを選択してください
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <select class="custom-select form-control-sm d-block w-100" id="time" required>
+                    <option value="希望時間なし">希望時間なし</option>
+                    <option value="9時">9時</option>
+                    <option value="9時半">9時半</option>
+                    <option value="10時">10時</option>
+                    <option value="10時半">10時半</option>
+                    <option value="11時">11時</option>
+                    <option value="11時半">11時半</option>
+                    <option value="12時">12時</option>
+                    <option value="12時半">12時半</option>
+                    <option value="15時">15時</option>
+                    <option value="15時半">15時半</option>
+                    <option value="16時">16時</option>
+                    <option value="16時半">16時半</option>
+                    <option value="17時">17時</option>
+                    <option value="17時半">17時半</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    時間を選択してください
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="mb-5 row align-items-center">
+            <label for="Subject" class="col-sm-2 col-form-label">メッセージ</label>
+            <div class="col-sm-10">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="ここにコメントを残す" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">当店にメッセージがある方はこちらにお書きください</label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="d-flex justify-content-center mb-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                利用規約に同意する
+              </label>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <button type=" submit" class="btn btn-primary">フォームを送信</button>
+          </div>
+        </form>
+  
+        <div class="mb-5 text-center">
+          <p class="text-left">お問い合わせのメールが正しく送れない場合は、下記のメールアドレスからご連絡ください。<br>メールでのご予約は承っておりませんので、ご予約の⽅はお電話にてお願いいたします。</p>
+        </div>
+  
+        <div class="text-center">
+          <a href="mailto:manabuokubo0707@gmail.com" class="border btn btn-light p-4 fw-bolder col-md-8">
+            manabuokubo0707@gmail.com へメールを送信<br>
+            <span class="fw-normal">※ メーラーが起動します</span>
+          </a>
+        </div>
+  
+      </section>
+  
+      <section class="py-5">
+        <h3 class="text-center font-weight-bold mb-5" id="tel-reservation">お電話からのご予約・お問い合わせ</h3>
+  
+        <div class="border p-3 p-md-4 mb-5">
+  
+          <h3 class="text-center fw-bold py-5 h1">TEL:090-1234-5678</h3>
+  
+          <div class="row border-bottom py-3 h4">
+            <div class="col-md-4">
+              <p>受付時間</p>
+            </div>
+            <hr class="d-block d-md-none">
+            <div class="col-md-4">
+              <p>月・火・木・金</p>
+            </div>
+            <div class="col-md-4">
+              <p>9：00〜13：00&ensp;<br class="d-block d-md-none">14：30〜19：00</p>
+            </div>
+          </div>
+  
+          <div class="row border-bottom py-3 h4">
+            <div class="col-md-4 d-none d-md-block">
+            </div>
+            <div class="col-md-4">
+              <p>水</p>
+            </div>
+            <div class="col-md-4">
+              <p>9：00〜13：00</p>
+            </div>
+          </div>
+  
+          <div class="row border-bottom py-3 h4">
+            <div class="col-md-4 d-none d-md-block">
+            </div>
+            <div class="col-md-4">
+              <p>土</p>
+            </div>
+            <div class="col-md-4">
+              <p>9：00〜13：00&ensp;<br class="d-block d-md-none">4：30〜17：00</p>
+            </div>
+          </div>
+  
+  
+  
+          <div class="row border-bottom py-3 mb-3 h4">
+            <div class="col-4">
+              <p>定休日</p>
+            </div>
+            <div class="col-8">
+              <p>毎週月曜日・夏季休暇・年末年始</p>
+            </div>
+          </div>
+  
+          <p>※ 年末年始・夏季休暇につきましては、HP内の最新情報にてお知らせいたします。</p>
+  
+        </div>
+      </section>
+  
+    </article>
+
+    <section class="pb-5">
+      <div class="d-lg-flex justify-content-center align-items-center">
+        <div class="col-lg-4 text-center mb-3">
+          <h4>大久保歯科クリニック</h4>
+          <h4 class="h3">TEL:03-3333-3333</h4>
+          <p class="mb-0">〒000-0000 東京都港区南青山3-2-6  &ensp;<br class="d-block d-md-none"></p>
+        </div>
+      </div>
+    </section>
+  
+    <footer>
+      <div class="navigation2">
+        <ul class="nav">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="staff.html">医師紹介</a></li>
+          <li><a href="reserve.html">予約</a></li>
+        </ul>
+      </div>      
+      <div class="text-center mt-4">
+        <small class="mb-5">&copy;2021 Okubo Dental clinic</small>
+      </div>
+    </footer>
+  
+    <div class="floating-nav">
+      <div class="px-3 py-4 bg-secondary">
+        <a class="" href="#net-reservation">ネット予約</a>
+      </div>
+      <div class="px-3 py-4 bg-dark">
+        <a class="" href="#tel-reservation">電話予約</a>
+      </div>
+    </div>
+  
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  
+  </body>
+  
+</html>

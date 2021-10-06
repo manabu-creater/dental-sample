@@ -1,0 +1,90 @@
+body {
+  background-image: initial;
+  background-color: white;
+}
+
+.nav li {
+  margin: 10px 40px 10px 40px;
+  font-size: 120%;
+}
+
+.main {
+  width: 1200px;
+  margin: 80px auto;
+}
+
+.top-img {
+  width: 50px;
+}
+
+.row.py-3 {
+  font-size: 130%;
+  border-top: 2px solid lightgray;
+  /* border-bottom: 2px solid lightgray; */
+  margin-bottom: 0 !important;
+}
+
+.row.py-4 {
+  font-size: 130%;
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 0 !important;
+}
+
+.second-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.second {
+  height: 80px;
+}
+
+.symptom {
+  width: 80px;
+  margin-top: 30px;
+}
+
+td {
+  font-weight: bold;
+}
+
+.row h3 {
+  margin-top: 120px;
+}
+
+/* mobile */
+@media screen and (max-width: 599px) {
+  .main {
+    width: 350px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav li {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 60%;
+  }
+
+  .reserve {
+    display: none;
+  }
+}
+
+/* i pad  */
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  .main {
+    width: 750px;
+    margin-top: 100px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+}

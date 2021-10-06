@@ -1,0 +1,60 @@
+/* 中デバイス（タブレット, 768px 以上）
+============================================== */
+@media (min-width: 768px) {
+  .img-size {
+    width: 70px;
+    margin-bottom: .5rem;
+  }
+}
+
+/* 大デバイス（デスクトップ, 992px 以上）
+============================================== */
+@media (min-width: 992px) {
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    -webkit-transform: skewX(150deg);
+    -moz-transform: skewX(150deg);
+    transform: skewX(150deg);
+    border-left: 1px dotted gray;
+  }
+
+  ul .right {
+    -webkit-transform: skewX(150deg);
+    -moz-transform: skewX(150deg);
+    transform: skewX(150deg);
+    border-right: 1px dotted gray;
+  }
+
+  ul .border-after {
+    border-left: 1px dotted white;
+  }
+
+  footer .right {
+    border-right: 1px dotted white;
+  }
+
+  nav ul li a {
+    display: block;
+    transform: skewX(-150deg);
+    padding: 0 10px;
+  }
+}
+
+/* 中デバイス（タブレット, 992px 未満）
+============================================== */
+@media (max-width: 991.98px) {
+  nav ul {
+    padding-top: 1rem;
+  }
+}
+
+/* 極小デバイス（縦向きモバイル, 576px 未満）
+============================================== */
+@media (max-width: 575.98px) {
+  footer nav ul.navbar-nav {
+    display: block;
+  }
+}
