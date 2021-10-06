@@ -1,0 +1,530 @@
+/* リセットCSS */
+body {
+  font-family: serif;
+  font-size: 14px;
+  margin: 0 auto;
+  background-image: url(images/b114.jpeg);
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 0 0;
+  margin: 0;
+}
+
+ul,li {
+  padding: 0;
+  margin: 0;
+}
+
+/* header */
+header {
+  background-color: antiquewhite;
+  opacity: 0.8;
+}
+
+.header {
+  display: flex;
+  padding-top: 20px;
+}
+
+.header-left {
+  width: 60%;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.logo {
+  width: 270px;
+  height: 70px;
+  display: block;
+}
+
+.header-right {
+  padding-top: 10px;
+  padding-right: 3%;
+  width: 40%;
+}
+
+.fas {
+  margin-right: 10px;
+}
+
+/* .header-right a {
+  text-align: right;
+  display: block;
+  font-size: 95%;
+  flex-wrap: nowrap;
+}
+
+.sns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sns a {
+  margin: 20px 20px;
+  cursor: pointer;
+} */
+
+.header-right p {
+  font-size: 70%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: right;
+  color: black;
+}
+
+.header-right a {
+  font-size: 140%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: right;
+  margin-right: 20px;
+  color: dodgerblue;
+  text-decoration: none;
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: absolute;
+  background-color: antiquewhite;
+  width: 100%;
+}
+
+.navigation.fixed{
+  position: fixed;
+  top: 0;
+}
+
+.nav li {
+  margin: 10px 60px 10px 60px;
+  font-size: 120%;
+}
+
+.nav a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+}
+
+.top-title {
+  position: absolute;
+  top: 50%;
+  left: 21%;
+  width: 800px;
+}
+
+
+/* main部分 */
+.main {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.scroll ul {
+  display: flex;
+  overflow-x: scroll;
+	margin: 0;	
+	padding: 0;
+}
+
+.scroll li{
+	min-width: 75%;
+  margin: 10px;	
+	padding: 0;
+	list-style: none;
+}
+
+.top {
+  width: 1000px;
+  height: 700px;
+  margin: 20px 150px 50px 180px;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: 280%;
+}
+
+
+
+/* contents */
+.contents {
+  background-image: url(images/tooth4.jpeg);
+  opacity: 0.7;
+}
+
+.fixed-background {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.message {
+  font-size: 260%;
+  padding-top: 100px;
+}
+
+.concepts p {
+  flex-wrap: wrap;
+  width: 700px;
+  margin: 100px auto 70px;
+  font-size: 150%;
+  color: white;
+}
+
+.concepts {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* machines */
+.machines {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.machine {
+  font-size: 260%;
+  margin-bottom: 50px;
+}
+
+.decoration {
+  display: flex;
+  justify-content: center;
+}
+
+/* teatment */
+.treatment {
+  margin-bottom: 10px;
+}
+
+.col-md-3.mb-5 {
+  margin-bottom: 10px;
+}
+
+.py-3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mb-5 {
+  margin: 0 20px auto 20px;
+  position: relative;
+}
+
+.treatment-name {
+  position: absolute;
+  top: 27%;
+  left: 20%;
+  font-size: 160%;
+  font-weight: bold;
+}
+
+.treatment-name2 {
+  position: absolute;
+  top: 27%;
+  left: 8%;
+  font-size: 160%;
+  font-weight: bold;
+}
+
+.item p {
+  margin-bottom: 40px;
+}
+
+/* .button {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: pink;
+  cursor: pointer;
+} */
+
+
+/* row */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 100px;
+}
+
+.row p {
+  margin-top: 20px;
+}
+
+.row h2 {
+  border-bottom: 2px solid cornflowerblue;
+}
+
+table {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.row a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.time {
+  font-size: 120%;
+}
+
+.navigation2 {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    padding-top: 5px;
+  }
+  
+  .header-right {
+    width: 70%;
+  }
+
+  .header-right p {
+    display: none;
+  }
+
+  .header-right a {
+    font-size: 60%;
+    margin-right: initial;
+    margin-bottom: 0;
+  }
+
+  /* .fab {
+    font-size: 60%;
+  } */
+
+  .logo {
+    width: 100px;
+    height: 35px;
+    
+  }
+
+  .header-left {
+    margin-left: 10px;
+  }
+
+  /* .sns a {
+    margin: 10px 10px;
+  } */
+
+  .nav li {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 60%;
+  }
+
+  .reserve {
+    display: none;
+  }
+  
+
+  .top {
+    height: 230px;
+    width: 350px;
+    margin: 50px 0;
+  }
+
+  .scroll li{
+    min-width: 100%;
+  }
+
+  .main {
+    width: 350px;
+    margin: 20px auto 20px; 
+  }
+
+  .fixed-background {
+    min-height: 30vh;
+  }
+
+  .contents h1 {
+    margin-top: 15px;
+  }
+
+  .message {
+    padding-top: 60px;
+    font-size: 90%;
+  }
+  
+  .contents p {
+    flex-wrap: wrap;
+    width: 230px;
+    margin: 10px auto;
+    font-size: 60%;
+    color: white;
+  }
+
+  .machines {
+    padding-top: 50px;
+  }
+
+  .machine {
+    font-size: 180%;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    margin-bottom: initial;
+  }
+
+  .treatment {
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .row p {
+    font-size: 90%;
+  }
+
+  .time {
+    font-size: 90%;
+  }
+  
+
+}
+
+/* i pad  */
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  .header-right p {
+    font-size: 70%;
+  }
+
+  .fab {
+    font-size: 80%;
+  }
+
+  .logo {
+    width: 170px;
+    height: 65px;
+  }
+
+  .nav li {
+    font-size: 100%;
+    margin: 10px 30px;
+    font-weight: bold;
+  }
+  
+
+  .header {
+    padding-top: 5px;
+  }
+  
+  .header-right {
+    width: 80%;
+  }
+
+  .header-right a {
+    font-size: 100%;
+    margin-right: initial;
+    margin-bottom: 0;
+  }
+
+  .top {
+    height: 400px;
+    width: 600px;
+    margin: 50px auto;
+  }
+
+
+  .scroll li{
+    min-width: 100%;
+  }
+
+  .fixed-background {
+    min-height: 50vh;
+    width: initial;
+  }
+
+  .concepts {
+    padding-top: 30px;
+  }
+
+  .message {
+    font-size: 150%;
+    margin-bottom: 50px;
+  }
+  
+  .contents p {
+    flex-wrap: wrap;
+    width: 450px;
+    margin: 10px auto;
+    font-size: 130%;
+  }
+
+  .machine {
+    margin-bottom: 30px;
+  }
+
+  .machines p {
+    font-size: 80%;
+  }
+
+  .treatment p {
+    font-size: 60%;
+  }
+
+  .title {
+    margin-top: initial;
+  }
+
+  .treatment-name {
+    position: absolute;
+    top: 22%;
+    left: 20%;
+    font-size: 100%;
+    font-weight: bold;
+  }
+  
+  .treatment-name2 {
+    position: absolute;
+    top: 22%;
+    left: 8%;
+    font-size: 100%;
+    font-weight: bold;
+  }
+
+  .py-3 {
+    margin-bottom: 20px;
+  }
+
+  .row h2 {
+    font-size: 130%;
+  }
+
+  .col-md-5 p {
+    font-size: 100%;
+  }
+
+  .small li {
+    font-size: 80%;
+  }
+
+  iframe {
+    margin-left: 30px;
+  }
+
+
+}
+
