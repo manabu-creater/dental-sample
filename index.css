@@ -358,17 +358,29 @@ table {
     width: 350px;
     margin: 20px auto 20px; 
   }
-
-  .concept {
-    backgraound-image: none;
+	
+  .fixed-background {
+    min-height: 30vh;
+  }
+  
+  .contents {
+    background-image: none;
+    position: relative;
   }
 
   .contents h1 {
     margin-top: 15px;
   }
-	
+
   .concept-img {
+    display: block;
     width: 350px;
+  }
+
+  .concepts {
+    position: absolute;
+    top: 1%;
+    left: 20%;
   }
 
   .message {
