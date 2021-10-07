@@ -165,6 +165,10 @@ header {
   background-position: center;
 }
 
+.concept-img {
+  display: none;
+}
+
 .message {
   font-size: 260%;
   padding-top: 100px;
@@ -355,12 +359,16 @@ table {
     margin: 20px auto 20px; 
   }
 
-  .fixed-background {
-    min-height: 30vh;
+  .concept {
+    backgraound-image: none;
   }
 
   .contents h1 {
     margin-top: 15px;
+  }
+	
+  .concept-img {
+    width: 350px;
   }
 
   .message {
